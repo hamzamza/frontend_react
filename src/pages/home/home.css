@@ -1,0 +1,23 @@
+@import url("../../components/root.css");
+.homeContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.titleOf {
+  font-family: "Poppins", sans-serif;
+  width: 1024px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px) {
+  .titleOf {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}

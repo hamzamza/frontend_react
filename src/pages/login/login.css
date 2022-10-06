@@ -1,0 +1,58 @@
+@import url("../../components/root.css");
+.login {
+  display: flex;
+  justify-content: center;
+}
+.lContainer {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 10rem;
+
+  padding: 2rem;
+  padding-bottom: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.lIncput {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: none;
+}
+.lIncput:hover {
+  border-radius: 7px;
+  outline: solid rgb(164, 181, 186) 2px;
+}
+.lheader {
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(164, 181, 186);
+}
+.lButton {
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  background: rgb(164, 181, 186);
+  cursor: pointer;
+}
+.lButton:hover {
+  background-color: rgb(120, 118, 145);
+  color: aliceblue;
+}
+
+.error {
+  color: red;
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+}

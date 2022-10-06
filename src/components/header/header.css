@@ -1,0 +1,207 @@
+@import url("../root.css");
+.header {
+  position: relative;
+  background-color: var(--bluebackground);
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  border-bottom: solid rgb(255, 255, 95) 3px;
+}
+.headerContainer {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 20px 0px 100px 0px;
+}
+.headerList {
+  display: flex;
+  gap: 20px;
+}
+.headerListItem {
+  cursor: pointer;
+  padding: 4px 10px;
+  gap: 8px;
+  display: flex;
+  border-radius: 1rem;
+}
+
+.headerListItem:hover {
+  background-color: white;
+  color: var(--bluebackground);
+}
+.headerListItem.active {
+  border: white solid 1px;
+}
+.headerTitle {
+  margin: 20px 0px;
+  font-weight: 600;
+}
+.headerDesc {
+  margin: 20px 0px;
+}
+.headerBtn {
+  margin-right: 20px;
+  border: none;
+  padding: 10px 12px;
+  color: white;
+  font-weight: 600;
+  background-color: var(--bluefath);
+  cursor: pointer;
+}
+.headerSearch {
+  align-items: center;
+  height: 50px;
+  display: flex;
+  border: solid rgb(255, 255, 95) 3px;
+  border-radius: 4px;
+  padding: 0 40px;
+  position: absolute;
+  justify-content: space-between;
+  background-color: white;
+  bottom: -30px;
+  width: 90%;
+
+  max-width: var(--max-width);
+}
+.headerSearchItem {
+  box-sizing: border-box;
+  flex: 2;
+  height: 100%;
+
+  color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.headerSearchItem:hover {
+  padding: 0px;
+  border-radius: 5px;
+
+  outline: solid rgb(255, 255, 95) 3px;
+}
+.headerSearchItem:hover .headerSearchInput {
+  background-color: transparent;
+}
+.search-logo {
+  color: rgb(90, 90, 90);
+}
+
+.headerSearchText {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.headerSearchText:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.342);
+  margin-bottom: -2px;
+}
+.headerSearchInput {
+  outline: none;
+  border: none;
+  text-align: center;
+  color: var(--bluebackground);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.searchBtn {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: var(--bluefath);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  gap: 5px;
+  border: none;
+}
+.ssch {
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}
+
+.Date {
+  z-index: 2;
+  position: absolute;
+  top: calc(100% + 10px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.options {
+  z-index: 2;
+  width: 200px;
+  position: absolute;
+  top: calc(100% + 3px);
+  padding: 20px 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.optionitem {
+  border-bottom: solid rgba(143, 143, 143, 0.356) 2px;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.headerContainer.listMode {
+  padding-bottom: 0;
+  margin: 20px 0px 20px 0px;
+}
+.counter {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.optionCounterNumber {
+  position: absolute;
+}
+.optionCounterNumber.active {
+  color: red;
+  animation: vibrate 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+.optionCounterbutton {
+  padding: 2px 8px;
+  background-color: rgb(61, 145, 255);
+  outline: none;
+  border: rgb(78, 125, 179) 1px solid;
+  border-radius: 30%;
+  color: white;
+}
+
+@keyframes vibrate {
+  0.50%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50% {
+    -webkit-transform: translate3d(0.5px, 0, 0);
+    transform: translate3d(0.5px, 0, 0);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45% {
+    -webkit-transform: translate3d(-0.5px, 0, 0);
+    transform: translate3d(-0.5px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0.5px, 0, 0);
+    transform: translate3d(0.5px, 0, 0);
+  }
+}
+/*
+.header-logo {
+  color: white;
+  padding-right: 7px;
+}
+*/

@@ -1,0 +1,66 @@
+@import url("../root.css");
+.navbar {
+  height: 50px;
+  background-color: var(--bluebackground);
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  color: white;
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 600;
+  cursor: pointer;
+}
+.navButton {
+  margin-right: 20px;
+  border: none;
+  padding: 6px 12px;
+  color: var(--bluebackground);
+  cursor: pointer;
+}
+.navButton:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* 
+
+.navbar {
+  padding-inline: 4rem;
+  height: 50px;
+  background-color: var(--bluebackground);
+  padding-top: 20px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+}
+
+.navItems {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.navButton {
+  outline: none;
+  margin-inline: 0.2rem;
+  width: 50%;
+  border: none;
+  padding-block: 0.3rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    background-color: olive;
+  }
+}
+*/

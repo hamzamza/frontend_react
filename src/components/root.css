@@ -1,0 +1,10 @@
+:root {
+  --bluebackground: #003580;
+  --max-width: 1124px;
+  --bluefath: #0071c2;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap");
