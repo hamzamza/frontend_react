@@ -1,9 +1,10 @@
+import API from "../../apiUrl";
 import useFetch from "../../hooks/useFetch";
 import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
   const { data, loading, error } = useFetch(
-    "http://localhost:5000/api/hotel?featured=true&limit=4"
+    API + "/api/hotel?featured=true&limit=4"
   );
 
   return (
