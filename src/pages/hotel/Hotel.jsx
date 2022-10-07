@@ -17,6 +17,7 @@ import useFetch from "../../hooks/useFetch";
 import { SearchContext } from "../../context/searchContext";
 import { AuthContext } from "../../context/authContext";
 import Reserve from "../../components/reserve/Reserve";
+import API from "../../apiUrl";
 
 const Hotel = () => {
   const navigate = useNavigate();
@@ -28,9 +29,7 @@ const Hotel = () => {
 
   const [isopen, setIsopen] = useState(false);
   const locate = useLocation();
-  const { data, loading, error } = useFetch(
-    `http://localhost:5000/api${locate.pathname}`
-  );
+  const { data, loading, error } = useFetch(`${API}/api${locate.pathname}`);
 
   const photos = [
     {

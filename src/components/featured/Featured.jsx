@@ -1,8 +1,9 @@
+import API from "../../apiUrl";
 import useFetch from "../../hooks/useFetch";
 import "./featured.css";
 const Featured = () => {
   const { data, loading, error } = useFetch(
-    "http://localhost:5000/api/hotel/countByCity?cities=aoulouz,taroudant,agadir"
+    API + "/api/hotel/countByCity?cities=aoulouz,taroudant,agadir"
   );
 
   return (

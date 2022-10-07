@@ -26,6 +26,7 @@ import "./list.css";
 import { useEffect } from "react";
 import useFetch from "../../hooks/useFetch";
 import { SearchContext } from "../../context/searchContext";
+import API from "../../apiUrl";
 function List() {
   const location = useLocation();
   const NEW_SEARCH = "NEW_SEARCH";
@@ -59,7 +60,7 @@ function List() {
     rooms: false,
   });
   const { data, loading, error, reFetch } = useFetch(
-    `http://localhost:5000/api/hotel?city=${destination}&limit=10`
+    `${API}/api/hotel?city=${destination}&limit=10`
   );
   const handelOption = (name, operation) => {
     if ((options[name] === 0) & (operation === "d")) {
@@ -90,11 +91,7 @@ function List() {
   const { dispatch, ...others } = useContext(SearchContext);
   const handelchange = () => {
     console.log("clicked");
-    reFetch(
-      `http://localhost:5000/api/hotel?&limit=10&min=${min || 0}&max=${
-        max || 10000
-      }`
-    );
+    reFetch(`${API}/api/hotel?&limit=10&min=${min || 0}&max=${max || 10000}`);
     if (destination.length > 0) {
       dispatch({
         type: NEW_SEARCH,

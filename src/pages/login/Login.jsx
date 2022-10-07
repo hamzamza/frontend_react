@@ -2,6 +2,7 @@ import axios from "axios";
 import { useContext } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import API from "../../apiUrl";
 import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import { AuthContext } from "../../context/authContext";
@@ -39,10 +40,7 @@ function Login() {
 
     dispatch({ type: LOGIN_START });
     try {
-      const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
-        credentials
-      );
+      const response = await axios.post(API + "/api/auth/login", credentials);
       await dispatch({ type: LOGIN_SUCCESS, payload: response.data.details });
       console.log("loged in");
       navigagte("/");
